@@ -5,6 +5,15 @@
 	"/about": [
 		"src/routes/about/+page.ts"
 	],
+	"/different-worlds": [
+		"src/routes/different-worlds/+page.ts"
+	],
+	"/how-to-move-a-zoo": [
+		"src/routes/how-to-move-a-zoo/+page.ts"
+	],
+	"/layered-horizons": [
+		"src/routes/layered-horizons/+page.ts"
+	],
 	"/sverdle": [
 		"src/routes/sverdle/+page.server.ts"
 	],

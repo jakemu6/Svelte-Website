@@ -2,10 +2,10 @@
 </script>
 
 <div class="flexContainer">
-    <div class="item x" style="width: 58%;">
+    <div class="item x" style="width: 65%;">
             <slot name="contOne"/>
     </div>
-    <div class="item y" style="width: 40%;">
+    <div class="item y" style="width: 32%;">
         <div class="fixed">
             <slot name="contTwo"/>
         </div>
@@ -13,14 +13,11 @@
 </div>
 
 <style>
-    .item {
-        background-color: aqua;
-    }
-
-    @media (max-width: 480px) {
+    @media (max-width: 768px) {
         .item {
             min-width: 100%;
             min-height: auto;
+            margin-bottom: 2rem;
         }
 
         .x {
@@ -33,31 +30,26 @@
 
     .fixed {
         position: sticky;
-        top: 0px;
+        top: 2rem;
         max-height: 100vh;
         z-index: 50;
-
         overflow-y: auto;
         -ms-overflow-style: none;
         scrollbar-width: none;
-        
-        /* padding-right: 2rem;
-        padding-top: 2rem; */
-
     }
     .fixed::-webkit-scrollbar {
         display: none;
     } 
-
     .flexContainer {
         margin: auto;
         max-width: 1536px;
+        padding: 2rem;
+
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 2%;
-
+        gap: 3%;
     }
 
 
